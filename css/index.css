@@ -240,7 +240,7 @@ footer nav a {
 }
 
 .navBar {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     display: flex;
     flex-direction: row;
     height: 4rem;
@@ -250,7 +250,7 @@ footer nav a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-left: 2.5rem;
     padding: .8rem;
     margin-top: 1.5rem;
@@ -260,12 +260,12 @@ footer nav a {
 
 .practiceDiv {
     height: 6rem;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 
 .practiceDiv2 {
     height: 11.5rem;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .aboutSection {
@@ -275,6 +275,11 @@ footer nav a {
 
 .aboutSection h2 {
     font-weight: bold;
+    margin-left: 2.2rem;
+}
+
+.aboutSection p {
+    margin-left: 2.2rem;
 }
 
 .imageSection {
@@ -284,31 +289,55 @@ footer nav a {
     justify-content: center; */
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
+    align-content: center;
 }
 
-.imageSection2 {
+
+/* .imageSection .imageSection2 {
     border: 4px solid blue;
     display: flex;
     justify-content: space-between;
     margin-top: 2.1rem;
+} */
+
+
+/* .imageDiv {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid cyan;
+} */
+
+.div2 {
+    /* border: 5px solid blue; */
+    /* margin-bottom: 20rem; */
+    /* justify-content: flex-start; */
+    /* margin-right: 20rem; */
 }
 
-.imageDiv {
+.div1-2Container {
+    border: 10px solid coral;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imageDiv:first-of-type {
+    display: flex;
+    justify-content: ;
+    /* margin: auto; */
     /* flex-wrap: wrap; */
-    flex-direction: column;
+    flex-direction: row;
     /* flex: 0 50%; */
     border: 4px solid purple;
-    width: 50rem;
     /* margin-left: 5rem; */
     align-content: flex-start;
+    margin-right: 25rem;
 }
 
-.imageDiv img {
+.imageDiv img:first-child {
     display: flex;
     /* width: 20rem; */
     /* margin-right: 20rem; */
@@ -317,15 +346,63 @@ footer nav a {
     /* justify-content: space-between; */
     /* padding: 2rem; */
     /* margin-top: 2rem; */
-    margin: 2rem;
+    /* margin: 2rem; */
     /* height: 10rem; */
     /* width: 12rem; */
     /* justify-content: stretch; */
+    align-content: flex-start;
 }
+
+.imageDiv:nth-child(2) {
+    display: flex;
+    /* flex-direction: row; */
+    width: 5rem;
+    justify-content: flex-start;
+    /* justify-content: flex-start; */
+    /* margin-right: 20rem; */
+}
+
+
+/* .exampleDiv img {
+    display: flex;
+} */
 
 .exampleDiv {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px dashed black;
+}
+
+.div2 button {
+    margin-top: 4rem;
+}
+
+.div3,
+.div4 {
+    margin-top: 3rem;
+}
+
+.div2,
+.div3,
+.div4 {
+    border-bottom: 2px dashed black;
+}
+
+.exampleDiv h2 {
+    /* margin-left: 2rem; */
+}
+
+.exampleDiv p {
+    /* margin-left: 2rem; */
+}
+
+.imageSection button {
+    padding: .8rem;
+    border-radius: 20px;
+    width: 30%;
+    /* margin-left: 2rem; */
+    margin-top: 1.5rem;
 }
 
 .beforeFooter {
@@ -338,18 +415,84 @@ footer nav a {
 
 .beforeFooter h2 {
     display: flex;
-    margin-left: 25rem;
+    /* margin-left: 25rem; */
     font-weight: bold;
+    /* margin: auto; */
 }
 
 .beforeFooter p {
     display: flex;
-    margin-left: 25rem;
+    /* margin-left: 25rem; */
 }
 
 .navFooter {
     display: flex;
     background-color: black;
     /* width: 80rem; */
-    margin-left: 25rem;
+    /* margin-left: 25rem; */
+}
+
+.boxes .box:first-of-type {
+    background-color: teal;
+}
+
+.boxes .box:nth-child(2) {
+    background-color: gold;
+}
+
+.boxes .box:nth-child(3) {
+    background-color: cadetblue;
+}
+
+.boxes .box:nth-child(4) {
+    background-color: coral;
+}
+
+.boxes .box:nth-child(5) {
+    background-color: crimson;
+}
+
+.boxes .box:nth-child(6) {
+    background-color: forestgreen;
+}
+
+.boxes .box:nth-child(7) {
+    background-coloR: darkorchid;
+}
+
+.boxes .box:nth-child(8) {
+    background-color: hotpink;
+}
+
+.boxes .box:nth-child(9) {
+    background=color: indigo;
+}
+
+.boxes .box:last-child {
+    background-color: dodgerblue;
+}
+
+.div1 {
+    border: 3px solid black;
+}
+
+
+/* .div2 {
+    border: 3px solid cadetblue;
+    display: flex;
+    height: 30rem;
+} */
+
+.div2Box {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    /* flex: 0 50%; */
+    border: 4px solid purple;
+    width: 50rem;
+    /* margin-left: 5rem; */
+    align-content: flex-start;
+    margin-bottom: 40rem;
 }
